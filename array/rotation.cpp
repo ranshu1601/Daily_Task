@@ -16,6 +16,7 @@ int main() {
   cout << "Enter array size: ";
   cin >> size;
   int *arr = new int[size];
+  cout<<"Enter array---"<<endl;
 
   for (int i = 0; i < size; i++) {
     cout << "enter: ";
