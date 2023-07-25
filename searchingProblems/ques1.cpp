@@ -34,8 +34,8 @@ int main() {
 
 */
 
-// Sorting approach Time Complexity of O(nlogn) {Complexity for sorting} and
-// space O(1)
+// Sorting approach Time Complexity of O(nlogn) {Complexity for sorting if sort function was used but here complexity is O(n^3) } and space O(1)
+/*
 #include <iostream>
 #include <iterator>
 using namespace std;
@@ -78,3 +78,5 @@ int main() {
 
   checkDuplicate(arr, size);
 }
+*/
+// HashTable approach Time Complexity of O(n) and space O(n)
