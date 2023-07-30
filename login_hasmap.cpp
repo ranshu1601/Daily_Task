@@ -4,8 +4,6 @@
 
 using namespace std;
 
-
-
 int main() {
   unordered_map<string, string> username;
 
@@ -15,8 +13,8 @@ int main() {
 
   while (flag) {
     cout << "Press 1 to Register " << endl;
-    cout << "Press 2 to Login "    << endl;
-    cout << "Press 3 to exist "    << endl;
+    cout << "Press 2 to Login " << endl;
+    cout << "Press 3 to exist " << endl;
     cout << "ENTER: ";
     cin >> n;
 
@@ -30,7 +28,7 @@ int main() {
       if (username.find(x) == username.end()) {
 
         username.insert(make_pair(x, y));
-        cout << "Registration Done" << endl;
+        cout << "Registration Done" << endl << endl;
 
       } else {
         cout << endl << "UserName Already Present !!" << endl;
@@ -45,22 +43,23 @@ int main() {
 
       cout << "Username: ";
       cin >> p;
-      cout << "Password: ";
-      cin >> q;
 
-      bool resultU =
-          username.find(p) == username.end(); // true means not present
-      bool resultP = username.find(q) == username.end();
-      bool checkEQ = username.at(p) == q;
+      bool resultU = username.find(p) == username.end(); // true means not present
+      
 
-      if (!resultP && !resultU && checkEQ) {
-        cout << "Logged In Successfully " << endl << endl;
-      } else if (!resultU && resultP) {
-        cout << "Wrong Password " << endl << endl;
-      } else if (resultU && !resultP) {
-        cout << "Wrong Username " << endl << endl;
-      } else
-        cout << "Both are wrong values" << endl << endl;
+      if (!resultU) {
+        cout << "Enter Password: ";
+        cin >> q;
+        if (username.at(p) == q) {
+          cout << "Logged In Successfully " << endl << endl;
+        } else {
+          cout << "Wrong Password! " << endl << endl;
+        }
+
+      }
+
+      else
+        cout << "Username does not exist! " << endl << endl;
 
       continue;
 
