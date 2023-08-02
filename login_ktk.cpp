@@ -71,10 +71,10 @@ int main() {
           if (passwords[i] == tempPassword) {
             cout << "Enter new password : ";
             cin >> tempPassword;
-            passwords[i] = tempPassword;
             cout << "Confirm Password : ";
             cin >> confirmPassword;
-            if (passwords[i] == confirmPassword) {
+            if (confirmPassword == tempPassword) {
+              passwords[i] = confirmPassword;
               cout << "Password Updated!" << endl;
             } else
               cout << "Error Try Again!" << endl;
