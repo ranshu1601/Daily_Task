@@ -14,6 +14,16 @@ int main(){
     cout<<"address of value at index "<<i<<"  " <<Arr+i<<" value at that address is "<<*(Arr+i)<<endl;
    
     i++;
+
     }while (i<4);
+
+      int ary[][5] = { {1, 2, 3, 4, 5},
+                   {6, 7, 8, 9, 0}
+                 };
+
+     int rows = sizeof ary / sizeof ary[0]; // 2 rows  
+
+     int cols = sizeof ary[0] / sizeof(int); // 5 cols
+     cout<<ary[0];
 
 }
