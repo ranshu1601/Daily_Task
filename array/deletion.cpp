@@ -31,7 +31,18 @@ void insertValue(vector<int> arr , int &val ,int &index ,  int len){
 
 
 }
-void deleteValue(){
+void deleteValue(vector<int> arr , int &index ,  int len){
+      if(index>=0 && index<len){
+        int x = arr[index];
+        for(int i=index ; i>len-1; i++){
+            arr[i] = arr[i+1]; 
+            len-- ;
+    }
+    }
+    for(int i=0 ; i<len ; i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
 
 }
 
@@ -75,7 +86,10 @@ int main(){
             insertValue(arr , val ,index , len);
         }
         else if(choice == 6){ 
-            deleteValue();
+            int index;
+            cout<<"Enter Index: ";
+            cin>>index;
+            deleteValue(arr , index ,  len);
         }
         else if(choice == 7){ 
             flag = !flag;
