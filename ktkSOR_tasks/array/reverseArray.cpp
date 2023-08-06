@@ -47,15 +47,15 @@ using namespace std;
 // }
 
 // Right Shift of Array
-void rightShift(int arr[], int &size) {
-  for (int i = size-1; i>=0; i--) {
-    arr[i] = arr[i - 1];
-  }
-  arr[0] = 0;
-  for (int i = 0; i < size; i++) {
-    cout << arr[i] << " ";
-  }
-}
+// void rightShift(int arr[], int &size) {
+//   for (int i = size-1; i>=0; i--) {
+//     arr[i] = arr[i - 1];
+//   }
+//   arr[0] = 0;
+//   for (int i = 0; i < size; i++) {
+//     cout << arr[i] << " ";
+//   }
+// }
 int main() {
   int size;
   cout << "Enter size: ";
@@ -71,6 +71,6 @@ int main() {
 
 //   cout << "Left Shifting Of Array: " << endl;
 //   leftShift(arr, size);
-  cout << "Right Shifting Of Array: " << endl;
-  rightShift(arr, size);
+//   cout << "Right Shifting Of Array: " << endl;
+//   rightShift(arr, size);
 }

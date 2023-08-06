@@ -5,9 +5,9 @@ Given Date:     31st Jul'23
 Complete Date:  06th Aug'23
     HD 1. Erricto Fibonaaci
      D 2. Erricto Binary Search
-       3. Array Abdul Bari
-       4. All sorting algo
-       5. All searching Algo
+    HD 3. Array Abdul Bari
+       4. sorting algo
+     D 5. searching Algo
        6. Project Euler
 
 Given Date:     06th Aug'23
