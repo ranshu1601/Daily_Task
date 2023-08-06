@@ -1,0 +1,27 @@
+Thought Process is important 
+
+
+Given Date:     31st Jul'23
+Complete Date:  06th Aug'23
+       1. Erricto Fibonaaci
+       2. Erricto Binary Search
+       3. Array Abdul Bari
+       4. All sorting algo
+       5. All searching Algo
+       6. Euler Videos
+
+Given Date:     06th Aug'23
+Complete Date:  07th Aug'23
+       1. OOPS Abdul Bari
+       2. OOPS Code with Harry CPP
+       3. OOPS Code with Harry Python
+      
+Given Date:     06th Aug'23
+Complete Date:      -
+       1. Debouncing and thoughtling in searches 
+       2. DBMS course with all imp terms 
+       3. Namaste JS full course 
+       4. Revise Django
+       5. RestAPIs
+       6. MongoDB
+       4. Django Note Making app with login logout application , and text limit. 
