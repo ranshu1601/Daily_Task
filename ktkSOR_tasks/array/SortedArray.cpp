@@ -14,15 +14,15 @@ void insertElement(int arr[], int size, int key) {
   }
 }
 
-bool isArraySorted(int arr[] , int &size){
-    bool flag = true ; 
-    for(int i=0 ; i<size-1 ;i++){
-        if(arr[i]>arr[i+1]){
-            flag = !flag;
-            break;
-        }
+bool isArraySorted(int arr[], int &size) {
+  bool flag = true;
+  for (int i = 0; i < size - 1; i++) {
+    if (arr[i] > arr[i + 1]) {
+      flag = !flag;
+      break;
     }
-    return flag ; 
+  }
+  return flag;
 }
 
 int main() {
@@ -36,9 +36,9 @@ int main() {
     cin >> arr[i];
   }
 
-//   cout << "Enter Key : ";
-//   cin >> key;
-//   insertElement(arr, size, key);
+  //   cout << "Enter Key : ";
+  //   cin >> key;
+  //   insertElement(arr, size, key);
 
-cout<<isArraySorted(arr, size);
+  cout << isArraySorted(arr, size);
 }
