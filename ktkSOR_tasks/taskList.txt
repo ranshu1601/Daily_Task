@@ -4,11 +4,11 @@ Thought Process is important
 Given Date:     31st Jul'23
 Complete Date:  06th Aug'23
        1. Erricto Fibonaaci
-       2. Erricto Binary Search
+     D 2. Erricto Binary Search
        3. Array Abdul Bari
        4. All sorting algo
        5. All searching Algo
-       6. Euler Videos
+       6. Project Euler
 
 Given Date:     06th Aug'23
 Complete Date:  07th Aug'23
