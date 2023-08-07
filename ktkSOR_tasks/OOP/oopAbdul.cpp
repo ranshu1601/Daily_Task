@@ -42,7 +42,7 @@ int Student::avgMarks(){
 }
 
 int Student::percentage(){
-    int percent = (engMarks+phyMarks+mathMarks+chemMarks)/400; 
+    int percent = 100* (engMarks+phyMarks+mathMarks+chemMarks)/160; 
     return percent; 
 }
 
