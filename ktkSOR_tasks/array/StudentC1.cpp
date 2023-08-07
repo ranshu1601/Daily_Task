@@ -40,7 +40,7 @@ int main() {
     if (arr[i] - i != diff) {
         while(diff<arr[i]-i){
                 cout << i + diff << " ";
-                diff = arr[i] - i;
+                diff++;
         }
     }
   }
