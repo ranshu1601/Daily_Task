@@ -1,24 +1,23 @@
 #include <iostream>
 using namespace std;
-
-class anshuVector {
+template <typename T> class anshuVector {
   int size;
   int length;
-  int *arr;
+  T *arr;
 
 public:
   // constructor
   anshuVector() {
     size = 1;
     length = 0;
-    arr = new int[1];
+    arr = new T[1];
   }
 
   // destructor
   ~anshuVector() { delete[] arr; }
 
   //   Function definition
-  void push_back(int value);
+  void push_back(T value);
   int at(int index);
   int max();
   int min();
@@ -27,16 +26,15 @@ public:
   int get(int index);
   void pop_back();
   void pop_at(int index);
-  void insert(int index, int value);
+  void insert(int index, T value);
   void reverse();
-  int find(int value);
+  int find(T value);
   void display();
 };
 
 // 1. PUSH_BACK
-void anshuVector::push_back(int value) {
+template <typename T> void anshuVector<T>::push_back(T value) {
   if (length == size) {
-
     int *newarr = new int[size * 2];
     for (int i = 0; i < size; i++) {
       newarr[i] = arr[i];
@@ -51,7 +49,7 @@ void anshuVector::push_back(int value) {
 }
 
 // 2. AT()
-int anshuVector::at(int index) {
+template <typename T> int anshuVector<T>::at(int index) {
   int ans;
   if (index >= 0 && index < length) {
     ans = arr[index];
@@ -60,7 +58,7 @@ int anshuVector::at(int index) {
 }
 
 // 3. MAX()
-int anshuVector::max() {
+template <typename T> int anshuVector<T>::max() {
   int ans = arr[0];
   for (int i = 0; i < length; i++) {
     if (arr[i] > ans) {
@@ -71,7 +69,7 @@ int anshuVector::max() {
 }
 
 // 4. MIN()
-int anshuVector::min() {
+template <typename T> int anshuVector<T>::min() {
   int ans = arr[0];
   for (int i = 0; i < length; i++) {
     if (arr[i] < ans) {
@@ -82,7 +80,7 @@ int anshuVector::min() {
 }
 
 // 5. GET()
-int anshuVector::get(int index) {
+template <typename T> int anshuVector<T>::get(int index) {
   int ans;
   if (index >= 0 && index < length) {
     ans = arr[index];
@@ -91,7 +89,7 @@ int anshuVector::get(int index) {
 }
 
 // 6. SUM()
-int anshuVector::sumArr() {
+template <typename T> int anshuVector<T>::sumArr() {
   int sumAll = 0;
   for (int i = 0; i < length; i++) {
     sumAll += arr[i];
@@ -100,15 +98,13 @@ int anshuVector::sumArr() {
 }
 
 // 7. COUNT()
-int anshuVector::count() {
-  return length;
-}
+template <typename T> int anshuVector<T>::count() { return length; }
 
 // 8. POP_BACK
-void anshuVector::pop_back() { length--; }
+template <typename T> void anshuVector<T>::pop_back() { length--; }
 
 // 9. POP_AT
-void anshuVector::pop_at(int index) {
+template <typename T> void anshuVector<T>::pop_at(int index) {
   if (index >= 0 && index < length) {
     int x = arr[index];
     for (int i = index; i < length - 1; i++) {
@@ -119,7 +115,7 @@ void anshuVector::pop_at(int index) {
 }
 
 // 10. INSERT
-void anshuVector::insert(int index, int value) {
+template <typename T> void anshuVector<T>::insert(int index, T value) {
   if (index >= 0 && index < length) {
     int i = length;
     while (i > index) {
@@ -132,7 +128,7 @@ void anshuVector::insert(int index, int value) {
 }
 
 // 11. REVERSE
-void anshuVector::reverse() {
+template <typename T> void anshuVector<T>::reverse() {
   for (int i = 0, j = length - 1; i < length / 2; i++, j--) {
     int temp;
     temp = arr[0];
@@ -142,7 +138,7 @@ void anshuVector::reverse() {
 }
 
 // 12. FIND
-int anshuVector::find(int value) {
+template <typename T> int anshuVector<T>::find(T value) {
   int ans;
   for (int i = 0; i < length; i++) {
     if (arr[i] == value) {
@@ -153,14 +149,14 @@ int anshuVector::find(int value) {
 }
 
 // 13. DISPLAY
-void anshuVector::display() {
+template <typename T> void anshuVector<T>::display() {
   for (int i = 0; i < length; i++) {
     cout << arr[i] << " ";
   }
 }
 
 int main() {
-  anshuVector ktk;
+  anshuVector<int> ktk;
   ktk.push_back(101);
   ktk.push_back(104);
   ktk.push_back(103);
@@ -181,5 +177,6 @@ int main() {
        << ktk.max() << "\n"
        << ktk.find(9) << "\n"
        << ktk.get(2) << "\n"
-       << ktk.sumArr()<<"\n"<<ktk.count();
+       << ktk.sumArr() << "\n"
+       << ktk.count();
 }
