@@ -12,7 +12,7 @@ Complete Date:  06th Aug'23
 
 Given Date:     06th Aug'23
 Complete Date:  07th Aug'23
-       1. OOPS Abdul Bari
+     D 1. OOPS Abdul Bari
        2. OOPS Code with Harry CPP
        3. OOPS Code with Harry Python
        4. Bitwise operator Erricto
