@@ -16,6 +16,13 @@ Complete Date:  07th Aug'23
        2. OOPS Code with Harry CPP
        3. OOPS Code with Harry Python
        4. Bitwise operator Erricto
+
+Given Date:     08th Aug'23
+Complete Date:  08th Aug'23
+      1. LinkedList 
+      2. All String questions Kunal Kushwaha
+      3. All Array questions Kunal Kushwaha
+      4. 1 HOUR ToDo list Project
       
 Given Date:     06th Aug'23
 Complete Date:      -
