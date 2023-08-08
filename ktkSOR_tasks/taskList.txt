@@ -1,5 +1,9 @@
-Thought Process is important 
+                                                    Thought Process is important 
 
+key -> D = DONE 
+      HD = HALF DONE
+         = NOT DONE
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 Given Date:     31st Jul'23
 Complete Date:  06th Aug'23
@@ -13,16 +17,18 @@ Complete Date:  06th Aug'23
 Given Date:     06th Aug'23
 Complete Date:  07th Aug'23
      D 1. OOPS Abdul Bari
-       2. OOPS Code with Harry CPP
-       3. OOPS Code with Harry Python
+     D 2. OOPS Code with Harry CPP
+     D 3. OOPS Code with Harry Python
        4. Bitwise operator Erricto
 
 Given Date:     08th Aug'23
-Complete Date:  08th Aug'23
-      1. LinkedList 
+Complete Date:     -
+      1. LinkedList Abdul Bari
       2. All String questions Kunal Kushwaha
       3. All Array questions Kunal Kushwaha
       4. 1 HOUR ToDo list Project
+      5. Add sorting function to anshuVector
+      6. Add Merging to array fucntion to anshuVector
       
 Given Date:     06th Aug'23
 Complete Date:      -
