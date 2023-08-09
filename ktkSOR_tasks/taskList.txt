@@ -29,6 +29,19 @@ Complete Date:     -
       4. 1 HOUR ToDo list Project
       5. Add sorting function to anshuVector
       6. Add Merging to array fucntion to anshuVector
+
+Given Date:     09th Aug'23
+Complete Date:     -
+      1. LL with 
+            - Display
+            - Reverse
+            - PushBack
+            - Insert
+            - DeleteAt
+            - Max
+            - Min
+            - Sorting
+
       
 Given Date:     06th Aug'23
 Complete Date:      -
