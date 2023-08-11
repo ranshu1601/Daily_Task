@@ -176,37 +176,3 @@ template <typename T> void anshuNode<T>::popAt(int index) {
   }
   length--;
 }
-
-// 11. SORT
-// void anshuNode::sortLL(){
-//   for(int i=0;i<length-1;i++){
-//     for(int j=0;j=length-i-1;j++){
-//       Node *temp = new Node;
-//       temp->data=
-//     }
-//   }
-// }
-
-int main() {
-  int arr[] = {1, 2, 3, 4, 5};
-  anshuNode<int> ktk;
-  ktk.createLL(arr, 5);
-  ktk.displayLL();
-  cout << "\n" << ktk.min();
-  cout << "\n" << ktk.max();
-  cout << "\n" << ktk.countNode();
-  cout << "\n" << ktk.isPresent(1);
-  cout << "\n";
-  ktk.insertAfter(4, 9);
-  ktk.displayLL();
-  cout << "\n";
-  ktk.insertHead(7);
-  ktk.displayLL();
-  cout << "\n";
-  ktk.popAt(3);
-  ktk.displayLL();
-  cout << endl;
-  ktk.reverseLL();
-  ktk.displayLL();
-  cout << endl;
-}
