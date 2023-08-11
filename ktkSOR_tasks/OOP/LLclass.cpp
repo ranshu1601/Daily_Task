@@ -18,13 +18,15 @@ public:
   void reverseLL();
   int min();
   int max();
+  int countNode();
   void pushBack();
   void pushFront();
   void insertAt();
   void sortLL();
 };
 
-void anshuNode::createLL(int arr[] , int len) {
+// 1. CREATE
+void anshuNode::createLL(int arr[], int len) {
 
   Node *temp;
   length = len;
@@ -42,12 +44,50 @@ void anshuNode::createLL(int arr[] , int len) {
   }
 }
 
+// 2. DISPLAY
 void anshuNode::displayLL() {
   Node *ptr = head;
   while (ptr != nullptr) {
     cout << ptr->data << "->";
     ptr = ptr->next;
   }
+}
+
+// 4. MIN
+int anshuNode::min() {
+  int min = head->data;
+  Node *ptr = head;
+  while (ptr != nullptr) {
+    if (ptr->data < min) {
+      min = ptr->data;
+    }
+    ptr = ptr->next;
+  }
+  return min;
+}
+
+// 5. MAX
+int anshuNode::max() {
+  int max = head->data;
+  Node *ptr = head;
+  while (ptr != nullptr) {
+    if (ptr->data > max) {
+      max = ptr->data;
+    }
+    ptr = ptr->next;
+  }
+  return max;
+}
+
+// 6. COUNT
+int anshuNode::countNode() {
+  int count = 0;
+  Node *ptr = head;
+  while (ptr != nullptr) {
+    count++;
+    ptr = ptr->next;
+  }
+  return count;
 }
 
 int main() {
