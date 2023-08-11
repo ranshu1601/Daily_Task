@@ -33,7 +33,7 @@ Complete Date:     -
 Given Date:     09th Aug'23
 Complete Date:     -
       1. LL with 
-            - Display
+          D - Display
             - Reverse
             - PushBack
             - Insert
@@ -41,8 +41,13 @@ Complete Date:     -
             - Max
             - Min
             - Sorting
+      2. Why LL and not Array      
+      3. Virtual Function 
 
-      
+Given Date:     11th Aug'23
+Complete Date:  11th Aug'23
+      1. Trees
+
 Given Date:     06th Aug'23
 Complete Date:      -
        1. Debouncing and thoughtling in searches 
