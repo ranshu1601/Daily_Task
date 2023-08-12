@@ -1,64 +1,63 @@
 #include <iostream>
-using namespace std ; 
+using namespace std;
 
-class Node{
-    public:
-        int data;
-        Node *next;
+class Node {
+public:
+  int data;
+  Node *next;
 };
 
-int main(){
-    //List
-    int Arr[] = {3,4,5,6,7,9};
+int main() {
+  // List
+  int Arr[] = {3, 4, 5, 6, 7, 9};
 
-    //Node
-    Node *head = new Node;
-    Node *last;
-    head->data = Arr[0];
-    head->next = nullptr;
-    
-    //initially 
-    last = head ;
+  // Node
+  Node *head = new Node;
+  Node *last;
+  head->data = Arr[0];
+  head->next = nullptr;
 
-    // Val to Node
-    int n = sizeof(Arr)/sizeof(int);
-    for(int i=1 ; i<n ; i++){
-        Node *temp = new Node ;
-        temp->data = Arr[i];
-        temp->next = nullptr;
+  // initially
+  last = head;
 
-        last->next=temp;
-        last = temp;
-    }
+  // Val to Node
+  int n = sizeof(Arr) / sizeof(int);
+  for (int i = 1; i < n; i++) {
+    Node *temp = new Node;
+    temp->data = Arr[i];
+    temp->next = nullptr;
 
-    //Display
-    Node *ptr = head ; 
-    while(ptr!=nullptr){
-        cout<<ptr->data<<" ";
-        ptr = ptr->next;
-    }
-   cout<<"\n";
+    last->next = temp;
+    last = temp;
+  }
 
-    //reversing LL -------------------->> Sliding Pointer Approach 
+  // Display
+  Node *ptr = head;
+  while (ptr != nullptr) {
+    cout << ptr->data << " ";
+    ptr = ptr->next;
+  }
+  cout << "\n";
 
-    // three pointers
-    Node *p = head ;
-    Node *q = nullptr;
-    Node *r = nullptr;
+  // reversing LL -------------------->> Sliding Pointer Approach
 
-    while(p!=nullptr){
-        r=q;
-        q=p;
-        p = p->next;
-        q->next= r;
-    }
-    head = q;
+  // three pointers
+  Node *p = head;
+  Node *q = nullptr;
+  Node *r = nullptr;
 
-    //Display
-    Node *pu = head;
-    while(pu!=nullptr){
-        cout<<pu->data<<" ";
-        pu = pu->next;
-    }
+  while (p != nullptr) {
+    r = q;
+    q = p;
+    p = p->next;
+    q->next = r;
+  }
+  head = q;
 
+  // Display
+  Node *pu = head;
+  while (pu != nullptr) {
+    cout << pu->data << " ";
+    pu = pu->next;
+  }
 }
