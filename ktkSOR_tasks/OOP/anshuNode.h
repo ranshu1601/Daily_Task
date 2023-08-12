@@ -38,7 +38,6 @@ public:
   void insertAfter(int index, int value);
   void insertHead(int value);
   void popAt(int index);
-  
 };
 
 // 1. CREATE
