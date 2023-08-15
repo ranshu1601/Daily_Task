@@ -5,12 +5,21 @@ class stack{
     public:
         int top;
         int size;
-        int *S;
+        int *S; //to store array
 };
 
-int main(){
-    stack ktk;
+void create(stack *ktk){
     cout<<"Enter Size: ";
-    cin>>ktk.size;
+    cin>>ktk->size;
+    ktk->top = -1;
+    ktk->S = new int[ktk->size];
 
+}
+
+void display(stack ktk){
+    int i;
+    for(i=ktk.top;i>=0;i--){
+        cout<<ktk.S[i];
+    }
+    cout<<"\n";
 }
