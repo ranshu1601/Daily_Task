@@ -41,6 +41,14 @@
 
 // better version
 
+//   map<int, int>::iterator iter;
+//   for (iter = modeMap.begin(); iter != modeMap.end(); iter++) {
+//     if (iter->second > maxNum) {
+//       maxNum = iter->second;
+//     }
+// cout<<iter->first <<" "<<iter->second <<endl;
+//   }
+
 #include <iostream>
 #include <map>
 
@@ -76,7 +84,6 @@ int main() {
     if (iter->second > maxNum) {
       maxNum = iter->second;
     }
-    // cout<<iter->first <<" "<<iter->second <<endl;
   }
 
   cout << maxNum;
