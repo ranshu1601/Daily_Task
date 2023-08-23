@@ -12,9 +12,9 @@ void hcf(int a, int b) {
 
 int main() {
   int a, b;
-  cout<<"enter a: ";
-  cin >> a ;
-  cout<<"enter b: ";
-  cin>> b;
+  cout << "enter a: ";
+  cin >> a;
+  cout << "enter b: ";
+  cin >> b;
   hcf(a, b);
 }
