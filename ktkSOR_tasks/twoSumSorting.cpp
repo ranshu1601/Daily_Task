@@ -15,13 +15,13 @@ void sortArr(int *arr, int &n) {
 }
 
 void twoSumSorting(int *arr, int &n, int sum) {
-  sortArr(arr,n);
+  sortArr(arr, n);
   int i = 0, j = n - 1;
   while (i < j) {
     if (arr[i] + arr[j] == sum) {
-      cout << arr[i] << " & " << arr[j];
+      cout << arr[i] << " & " << arr[j]<<" ";
       i++;
-      j++;
+      j--;
     } else if (arr[i] + arr[j] < sum) {
       i++;
     } else {
