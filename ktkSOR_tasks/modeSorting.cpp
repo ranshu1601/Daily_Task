@@ -1,7 +1,8 @@
+#include <bits/stdc++.h>
 #include <iostream>
 #include <vector>
 
-#include <bits/stdc++.h>
+
 using namespace std;
 
 void sort(int *arr, int &n) {
@@ -24,11 +25,6 @@ void modeSorting(int *arr, int &n) {
   cout << "\n\n";
   int count = 1;
   for (int i = 1; i < n; i++) {
-    if (arr[i] == arr[i - 1]) {
-      count++;
-    } else if (arr[i] > arr[i - 1]) {
-      count = 1;
-    }
     ans.push_back(count);
   }
 
@@ -48,3 +44,8 @@ int main() {
 
   modeSorting(arr, size);
 }
+    if (arr[i] == arr[i - 1]) {
+      count++;
+    } else if (arr[i] > arr[i - 1]) {
+      count = 1;
+    }
