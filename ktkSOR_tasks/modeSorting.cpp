@@ -1,7 +1,4 @@
-#include <bits/stdc++.h>
 #include <iostream>
-#include <vector>
-
 
 using namespace std;
 
@@ -18,17 +15,30 @@ void sort(int *arr, int &n) {
   }
 }
 
-void modeSorting(int *arr, int &n) {
-  vector<int> ans;
+int modeSorting(int *arr, int &n) {
   sort(arr, n);
+  int maxCount = 0;
+  int currentCount = 1;
+  int mode = arr[0];
 
-  cout << "\n\n";
-  int count = 1;
   for (int i = 1; i < n; i++) {
-    ans.push_back(count);
+    if (arr[i] == arr[i - 1]) {
+      currentCount++;
+    } else {
+      if (currentCount > maxCount) {
+        maxCount = currentCount;
+
+        mode = arr[i - 1];
+      }
+      currentCount = 1;
+    }
   }
 
-  cout << "Mode is :" << *max_element(ans.begin(), ans.end());
+  if (currentCount > maxCount) {
+    maxCount = currentCount;
+    mode = arr[n - 1];
+  }
+  return mode;
 }
 
 int main() {
@@ -42,10 +52,5 @@ int main() {
     cin >> arr[i];
   }
 
-  modeSorting(arr, size);
+  cout << modeSorting(arr, size);
 }
-    if (arr[i] == arr[i - 1]) {
-      count++;
-    } else if (arr[i] > arr[i - 1]) {
-      count = 1;
-    }
